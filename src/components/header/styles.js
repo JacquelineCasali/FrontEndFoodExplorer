@@ -3,25 +3,13 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakPoints'
 
 export const Container = styled.div`
     display: flex;
+    gap: 2rem;
     width: 100%;
     height: 7.1rem;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_400};
     padding: 1.5rem 7.6rem;
     align-items: center;
     border-radius: .3rem;
-
-
-    > input {
-        width: 100%;
-        height: 3rem;
-        margin-right: 2rem;
-        border-radius: .3rem;
-        border: none;
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
-        padding: 0.7rem 0.8rem;
-
-   }
-
 
    > .buttonLogout {
     border: none;
@@ -33,6 +21,27 @@ export const Container = styled.div`
         height: 2rem;
         color: ${({theme}) => theme.COLORS.WHITE};
     }
+   }
+
+   > .signOut {
+    display: none;
+   }
+
+   @media(max-width: ${DEVICE_BREAKPOINTS.SMALL}) {
+        input {
+            display: none;
+        }
+
+        button {
+            text-indent: -9999px;
+            background-color: transparent;
+        }
+
+        > .buttonLogout {
+            display: none;
+        }
+
+
    }
 `;
 
