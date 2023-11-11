@@ -1,4 +1,5 @@
 import { Container, Logo } from "./styles";
+import { Button } from '../Button'
 import { FiMenu } from 'react-icons/fi'
 import { BsFillHexagonFill, BsSearch } from 'react-icons/bs'
 import { PiReceipt, PiSignOutFill } from 'react-icons/pi'
@@ -16,11 +17,11 @@ export function Header() {
             type="text" 
             />
 
-            <button className="buttonShoppBag">
-                <PiReceipt/>
-                Pedidos(0)
 
-            </button>
+            <Button 
+            title="Pedidos"
+            icon={PiReceipt}
+            />
 
             <button className="buttonLogout">
                 <PiSignOutFill />
