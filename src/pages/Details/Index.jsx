@@ -3,6 +3,7 @@ import { Header } from '../../components/header/Index'
 import { Tags } from '../../components/Tags/Index'
 import { Counter } from '../../components/Counter/Index'
 import { Button } from '../../components/Button/Index'
+import { Footer } from '../../components/Footer/Index'
 import { MdOutlineArrowBackIos } from 'react-icons/md'
 
 export function Details() {
@@ -39,6 +40,8 @@ export function Details() {
 
         </div>
       </Content>
+
+      <Footer />
     </Container>
 )
 }

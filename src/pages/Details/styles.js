@@ -8,6 +8,7 @@ export const Container = styled.div`
     "header"
     "button"
     "content"
+    "footer"
     ;
 
     > .buttonBack {
@@ -31,6 +32,7 @@ export const Container = styled.div`
 @media(max-width: ${DEVICE_BREAKPOINTS.SMALL}) {
     display: flex;
     flex-direction: column;
+    padding: 0;
 
     > .buttonBack {
         display: flex;
@@ -118,6 +120,7 @@ grid-area: content;
 >.dishDescription {
     display: flex;
     flex-direction: column;
+    padding: 0;
     
 
     >h1 {
