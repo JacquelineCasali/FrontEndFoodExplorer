@@ -5,7 +5,7 @@ import { Button } from '../../components/Button'
 import { BsFillHexagonFill } from 'react-icons/bs'
 
 
-export function Signin() {
+export function Signup() {
     return(
         <Container>
             <Logo>
