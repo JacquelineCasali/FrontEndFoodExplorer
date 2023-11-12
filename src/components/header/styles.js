@@ -23,12 +23,21 @@ export const Container = styled.div`
     }
    }
 
-   > .signOut {
+   > .inputSearch {
+    width: 100%;
+   }
+
+   > .signOut, .buttonMenu {
     display: none;
    }
 
+
+
    @media(max-width: ${DEVICE_BREAKPOINTS.SMALL}) {
-        input {
+        display: flex;
+        padding: 3.7rem 1.7rem 1.7rem ;
+
+        > .inputSearch {
             display: none;
         }
 
@@ -41,13 +50,27 @@ export const Container = styled.div`
             display: none;
         }
 
+        > .buttonMenu {
+            display: flex;
+            background-color: transparent;
+            border: none;
+            > svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                color: ${({theme}) => theme.COLORS.WHITE};
+            }
+                
+
+        }
+
 
    }
 `;
 
 export const Logo = styled.div`
     display: flex;
-    width: 12.31rem;
+    gap: 0.5rem;
+    min-width: 12.31rem;
 
 
     > svg {
@@ -62,6 +85,22 @@ export const Logo = styled.div`
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 700;
+    }
+
+    @media(max-width: ${DEVICE_BREAKPOINTS.SMALL}) {
+        display: flex;
+
+        > h1 {
+        font-size: 1.3rem;
+        }
+
+        > svg {
+        
+        width: 1.5rem;
+        height: 1.5rem;
+        }
+
+
     }
 
 `;

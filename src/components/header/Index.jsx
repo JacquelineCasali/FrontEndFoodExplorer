@@ -8,6 +8,9 @@ import { PiReceipt, PiSignOutFill } from 'react-icons/pi'
 export function Header() {
     return(
         <Container>
+            <button className="buttonMenu">
+                <FiMenu />
+            </button>
             <Logo>
                 <BsFillHexagonFill />
                 <h1>Food explorer</h1>
@@ -18,9 +21,12 @@ export function Header() {
                 <area shape="" coords="" href="" alt="" />
             </button>
 
+            <div className="inputSearch">
             <Input 
             placeholder="Busque por pratos ou ingredientes"
             />
+            </div>
+
 
 
             <Button 
