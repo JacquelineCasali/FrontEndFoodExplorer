@@ -97,7 +97,7 @@ grid-area: content;
 
     >.includeDish {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
     }
 }
 
@@ -131,7 +131,6 @@ grid-area: content;
     }
 
     >p {
-        max-width: 19.7rem;
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
