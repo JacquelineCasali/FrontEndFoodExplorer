@@ -106,6 +106,8 @@ grid-area: content;
 @media(max-width: ${DEVICE_BREAKPOINTS.SMALL}) {
     display: flex;
     flex-direction: column;
+    margin-top: 7.1rem;
+
     padding: 0 3.5rem;
 
     > img {
@@ -151,6 +153,7 @@ grid-area: content;
     >.includeDish {
         display: flex;
         gap: 2rem;
+        margin-bottom: 3.3rem;
     }
 }
 
