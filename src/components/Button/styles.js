@@ -8,7 +8,7 @@ export const Container = styled.button`
         justify-content: center;
 
         gap: .5rem;
-        width: 13.5rem;
+        width: 100%;
         height: 3rem;
 
         border-radius: .3rem;
