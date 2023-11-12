@@ -14,8 +14,13 @@ export function Signup() {
             </Logo>
 
             <Form>
-                <h1>Faça login</h1>
-                
+                <h1>Crie sua conta</h1>
+
+                <label htmlFor="">Seu nome</label>
+                <Input 
+                placeholder="Exemplo: Maria da Silva"
+                />
+
                 <label htmlFor="">Email</label>
                 <Input 
                 placeholder="Exemplo: exemplo@exemplo.com.br"
@@ -26,9 +31,9 @@ export function Signup() {
                 placeholder="No mínimo 6 caracteres"
                 />
 
-                <Button title="Entrar"/>
+                <Button title="Criar conta"/>
 
-                <ButtonText title="Criar uma conta"/>
+                <ButtonText title="Já tenho uma conta"/>
                 
 
             </Form>

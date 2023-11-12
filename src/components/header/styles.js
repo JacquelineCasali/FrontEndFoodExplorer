@@ -25,7 +25,7 @@ export const Container = styled.div`
    }
 
    > .inputSearch {
-    width: 100%;
+    min-width: 36.31rem;
    }
 
    > .signOut, .buttonMenu {
@@ -86,6 +86,10 @@ export const Logo = styled.div`
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 700;
+    }
+
+    > button{
+
     }
 
     @media(max-width: ${DEVICE_BREAKPOINTS.SMALL}) {
